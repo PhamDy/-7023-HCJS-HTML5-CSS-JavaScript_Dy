@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            text-align: center;
+            color: red;
+        }
+        #para1 {
+            text-align: center;
+            color: red;
+        }
+        .center {
+            text-align: center;
+            color: red;
+        }
+        p.center{
+            text-align: center;
+            color: red;
+        }
+        p.large{
+            font-size: 300%;
+        }
+        h1, h2, p {
+            text-align: center;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Every paragraph will be affected by the style.</p>
+        <p id="para1">Me too!</p>
+        <p>And me!</p>
+    </div>
+    
+    <div>
+        <p id="para1">Hello World!</p>
+        <p>This paragraph is not affected by the style.</p>
+    </div>
+
+    <div>
+        <h1 class="center">Red and center-aligned heading</h1>
+        <p class="center">Red and center-aligned paragraph.</p> 
+    </div>
+
+    <div>
+        <h1 class="center">This heading will not be affected</h1>
+        <p class="center">This paragraph will be red and center-aligned.</p> 
+    </div>
+
+    <div>
+        <h1 class="center">This heading will not be affected</h1>
+        <p class="center">This paragraph will be red and center-aligned.</p>
+    <p class="center large">This paragraph will be red, center-aligned, and in a large font-size.</p>
+    </div>
+
+    <div>
+        <h1>Hello World!</h1>
+        <h2>Smaller heading!</h2>
+        <p>This is a paragraph.</p>
+    </div>
+</body>
+</html>
