@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    <video width="400" controls >
+        <source src="./video/HTML Video.mp4" type="video/mp4">
+        <source src="mov_bbb.ogg" type="video/ogg">
+    </video>
+
+    <p>
+        <a href="https://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>
+    </p>
+    </div>
+    <div>
+        <video width="320" height="240" controls>
+            <source src="./video/HTML Video.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+        </video>
+    </div>
+    <div>
+        <video width="320" height="240" autoplay>
+            <source src="./video/HTML Video.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+        </video>
+    </div>
+    <div>
+        <video width="320" height="240" autoplay muted>
+            <source src="./video/HTML Video.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+        </video>
+    </div>
+
+    <div style="text-align: center">
+        <button onclick="playPause()">Play/Pause</button>
+        <button onclick="makeBig()">Big</button>
+        <button onclick="makeSmall()">Small</button>
+        <button onclick="makeNormal()">Normal</button>
+        <br>
+        <video id="video1" width="420">
+            <source src="./video/HTML Video.mp4" type="video/mp4">
+            <source src="mov_bbb.ogg" type="video/ogg">
+        </video>
+    </div>
+
+    <script>
+        var myVideo = document.getElementById("video1")
+
+        function playPause() {
+            if (myVideo.paused)
+            myVideo.play();
+            else
+            myVideo.pause();
+        }
+
+        function makeBig(){
+            myVideo.width = 560;
+        }
+
+        function makeSmall() {
+            myVideo.width = 320;
+        }
+
+        function makeNormal() {
+            myVideo.width = 420;
+        }
+    </script>
+
+    <p>Video courtesy of <a href="https://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.</p>
+
+</body>
+</html>
