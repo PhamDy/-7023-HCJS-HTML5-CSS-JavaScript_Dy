@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript For Loop</h2>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+
+<script>
+
+const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+let text = "";
+for (let i = 0; i < cars.length; i++) {
+  text += cars[i] + "<br>";
+}
+//
+
+document.getElementById("demo").innerHTML = text;
+const person = {fname:"John", lname:"Doe", age:25}; 
+let txt = "";
+for (let x in person) {
+  txt += person[x] + " ";
+}
+
+document.getElementById("demo1").innerHTML = txt;
+
+//
+const ca = ["BMW", "Volvo", "Mini"];
+let text2 = "";
+for (let x of cars) {
+  text2 += x + "<br>";
+}
+document.getElementById("demo2").innerHTML = text;
+//
+
+let text3 = "";
+let i = 0;
+while (i < 10) {
+  text3 += "<br>The number is " + i;
+  i++;
+}
+document.getElementById("demo3").innerHTML = text3;
+</script>
+
+</body>
+</html>
