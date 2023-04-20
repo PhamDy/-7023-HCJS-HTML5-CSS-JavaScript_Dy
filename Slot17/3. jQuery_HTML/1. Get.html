@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                alert("Text: " + $("#test").text());
+            });
+            $("#btn2").click(function(){
+                alert("HTML: " + $("#test").html());
+            });
+        });
+
+        $(document).ready(function(){
+            $("button").click(function(){
+                alert("Value: " + $("input").val());
+            })
+        });
+
+        $(document).ready(function(){
+            $("button").click(function(){
+                alert($("#w3s").attr("href"));
+              });
+            });
+
+    </script>
+
+</head>
+<body>
+    <p id="test">This is some <b>bold</b> text in a paragraph.</p>
+
+    <button id="btn1">Show Text</button>
+    <button id="btn2">Show HTML</button>   
+
+    <p>Name: <input type="text" id="test" value="Mickey Mouse"></p>
+
+    <button>Show Value</button>
+
+    <p><a href="https://www.w3schools.com" id="w3s">W3Schools.com</a></p>
+
+    <button>Show href Value</button>
+</body>
+</html>
