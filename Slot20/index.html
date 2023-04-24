@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Panels - Tabs</title>
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/tabs.css">
+</head>
+<body>
+
+    <header>
+        <h1>Monsieur Pigeon</h1>
+    </header>
+    <section class="page">
+        <div class="tabs">
+            <ul class="tab-list">
+                <li class="active"><a class="tab-control" href="#tab-1">
+                    <h3>Description</h3>
+                </a></li>
+                <li><a class="tab-control" href="#tab-2">
+                    <h3>Ingredients</h3>
+                </a></li>
+                <li><a class="tab-control" href="#tab-3">
+                    <h3>Delivery</h3>
+                </a></li>
+            </ul>
+            <div class="tab-panel active" id="tab-1">
+                <p>Take your tastebuds for a gentle stroll through an English garden.</p>
+            </div>
+            <div class="tab-panel" id="tab-2">
+                <p><strong>ELDERBERRY:</strong> sugar, glucose syrup, elderberry concentrate, gelatine</p>
+            </div>
+            <div class="tab-panel" id="tab-3">
+                <p>Free postage and packaging on all orders! Due to the perishable nature of our product.</p>
+            </div>
+        </div>
+    </section>    
+    <script src="/js/jquery-1.11.0.min.js"></script>
+    <script src="/js/tabs.js"></script>
+</body>
+</html>
